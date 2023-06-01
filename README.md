@@ -10,7 +10,7 @@ This is a boilerplate for creating a roboust Typescript NPM modules. It uses:
 
 ## Setup
 
-1. Clone this repo
+1. Fork or clone this repo
 2. Change the name of the module, author and version in `package.json`
 3. Set the license
 4. Set private to `false` if you want to publish the module to NPM, or delete it all together
