@@ -1,0 +1,12 @@
+{
+  "prettier": true,
+  "rules": {
+    "import/extensions": "off",
+    "unicorn/filename-case": "off",
+    "@typescript-eslint/no-empty-interface": "warn",
+    "wait-expression-member": "off",
+    "unicorn/no-await-expression-member": "off",
+    "n/file-extension-in-import": "off",
+    "@typescript-eslint/member-ordering": "off"
+  }
+}

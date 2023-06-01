@@ -1,0 +1,43 @@
+{
+  "name": "boilerplate",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./dist/moduleName.umd.cjs",
+  "module": "./dist/moduleName.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/moduleName.js",
+      "require": "./dist/moduleName.umd.cjs"
+    }
+  },
+  "description": "",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsc && vite build",
+    "lint": "xo",
+    "lint:fix": "xo --fix",
+    "test": "npm run clean && vitest",
+    "test:coverage": "vitest run --coverage",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run test && npm run lint",
+    "preversion": "npm run lint"
+  },
+  "private": true,
+  "license": "Unlicense",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.1.3",
+    "@vitest/browser": "^0.31.0",
+    "@vitest/coverage-c8": "^0.31.0",
+    "rimraf": "^5.0.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.2",
+    "vite-plugin-dts": "^2.3.0",
+    "vitest": "^0.31.0",
+    "webdriverio": "^8.10.2",
+    "xo": "^0.54.2"
+  }
+}
