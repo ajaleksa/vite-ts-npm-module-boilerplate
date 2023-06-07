@@ -18,7 +18,8 @@ This is a boilerplate for creating a roboust Typescript NPM modules. It uses:
 6. Change main and module in `package.json` to point to the entry point of the module defined in `vite.config.ts`
 7. Setup prettier, xo and vscode to your liking
 8. Change README
-9. Happy coding!
+9. Upon adding js or ts files that you do not want to be linted by XO, add them to `.eslintignore`.
+10. Happy coding!
 
 ## Usage
 
