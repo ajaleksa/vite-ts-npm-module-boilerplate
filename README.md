@@ -7,6 +7,8 @@ This is a boilerplate for creating a roboust Typescript NPM modules. It uses:
  - [Vitest](https://vitest.dev/) for testing
  - [XO](https://github.com/xojs/xo) for linting
  - [Prettier](https://prettier.io/) for formatting
+ - [Typescript](https://www.typescriptlang.org/) for typing
+ - [Typedoc](https://typedoc.org/) for documentation
 
 ## Setup
 
@@ -19,7 +21,8 @@ This is a boilerplate for creating a roboust Typescript NPM modules. It uses:
 7. Setup prettier, xo and vscode to your liking
 8. Change README
 9. Upon adding js or ts files that you do not want to be linted by XO, add them to `.eslintignore`.
-10. Happy coding!
+10. Optionally, configure typedoc.
+11. Happy coding!
 
 ## Usage
 
@@ -32,10 +35,10 @@ This is a boilerplate for creating a roboust Typescript NPM modules. It uses:
 7. Run `npm run test:coverage` to run tests with coverage
 8. Run `npm run format` to format the code
 9. Run `npm run publish` to publish the module to NPM
+10. Run `npm run docgen` to generate documentation
 
 ## To be done
 
-- Include Typescript documentation generator
 - Define guidelines for browser testing
 
 ## License

@@ -21,7 +21,8 @@
     "test:coverage": "vitest run --coverage",
     "prepare": "npm run build",
     "prepublishOnly": "npm run test && npm run lint",
-    "preversion": "npm run lint"
+    "preversion": "npm run lint",
+    "docgen": "typedoc src/index.ts"
   },
   "private": true,
   "license": "Unlicense",
@@ -33,6 +34,7 @@
     "@vitest/browser": "^0.31.0",
     "@vitest/coverage-c8": "^0.31.0",
     "rimraf": "^5.0.0",
+    "typedoc": "^0.24.8",
     "typescript": "^5.0.2",
     "vite": "^4.3.2",
     "vite-plugin-dts": "^2.3.0",
